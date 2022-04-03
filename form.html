@@ -1,0 +1,168 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Demo</title>
+</head>
+<body>
+    <h1>Form</h1>
+    <!-- <button>Formun Dışında</button> -->
+    
+    <form action="/pizza">
+        <!-- <button>Sakın Gönderme</button> -->
+        
+        <label for="isim">Kullanıcı Adı:</label>
+        <input type="text" id="isim" name="kullanıcı adı" placeholder="Kullanıcı Adı"><br><br>
+        <label for="sifre">Şifre giriniz:</label>
+        <input type="password" id="sifre" name="parola"placeholder="Şifrenizi giriniz."><br><br>
+        <label for="email">Mail:</label>
+        <input type="email" id="email" name="email"placeholder="Email adresinizi giriniz."><br><br>
+        <label for="renk">Renk seçiniz:</label>
+        <input type="color" id="renk" name="renk"><br><br>
+        <label for="number">Sayı giriniz:</label>
+        <input type="number" id="number" name="number" min="5" max="10"placeholder="Sayı giriniz."><br><br>
+
+       
+   <label>Bilgeadam <input type="text"  ></label>    
+   <button type="submit">Gönder!!</button> 
+   <!-- <button type="button">Normal Buton</button> -->
+   <!-- <input type="submit" value="Submit"> -->
+  
+    </form>
+    <hr>
+    <form action="https://www.reddit.com/search/?q=kedicik">
+<input type="text" name="q" id="" placeholder="Search Reddit">
+<button>Search Reddit</button>
+    </form>
+    
+    <form action="https://www.google.com.tr/search?q=front+end+developer&hl=tr&source=hp&ei=D1BJYuutFaiJxc8P29mbgAY&iflsig=AHkkrS4AAAAAYkleH_bCsUczEPdTlXIc_Cv2bbTJevKx&oq=front+end+&gs_lcp=Cgdnd3Mtd2l6EAMYADIICAAQgAQQsQMyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6CwgAEIAEELEDEIMBOgQIABADOg4ILhCABBCxAxDHARDRAzoICAAQsQMQgwE6CwguEIAEELEDEIMBOgsILhCxAxCDARDUAjoICC4QgAQQ1AI6DgguEIAEELEDEMcBEKMCOg4ILhCABBCxAxCDARDUAjoHCAAQsQMQCjoRCC4QgAQQsQMQgwEQxwEQ0QM6CAguEIAEELEDOgsILhCABBCxAxDUAlAAWIxLYPpcaAVwAHgAgAFxiAHNCpIBBDEzLjKYAQCgAQGwAQA&sclient=gws-wiz">
+        <input type="text" name="q" placeholder="Search Google">
+        <button>Search Google</button>
+    </form>
+    <form action="https://www.youtube.com/results?search_query=html" target="_blank">
+        <input type="text" name="search_query" placeholder="Search Youtube" >
+        <button>Search Youtube</button>
+    </form><hr>
+    <form action="/birds">
+        <label for="agree">Kabul Ediyorum</label>
+        <input type="checkbox" name="agree" id="agree"><br>
+        <label for="onay">Onaylıyorum</label>
+        <input type="checkbox" name="onay" id="onay"checked> <br><br>
+        <button>Gönder</button>
+    </form>
+    <hr>
+    <form action="/kuşlar">
+        <label for="birds">Martı</label>
+        <input type="radio" name="birds" id="birds" value="Martı"><br>
+        <label for="birds2">Kartal</label>
+        <input type="radio" name="birds" id="birds2" value="Kartal" checked><br>
+        <label for="birds3">Karga</label>
+        <input type="radio" name="birds" id="birds3" value="Karga"> <br><br>
+        <button>Yolla</button>
+    </form>
+    <hr>
+
+    <form action="/example">
+        <h2>Input</h2>
+        <input type="checkbox" name="kabul" id="kabul" checked>
+        <label for="kabul">Kabul ediyorum</label> <br>
+        <label for="xs">XS:</label>
+        <input type="radio" name="size" id="xs" value="XS">
+        <label for="m">M:</label>
+        <input type="radio" name="size" id="m"value="M">
+        <label for="l">L:</label>
+        <input type="radio" name="size" id="l" value="L">
+        <label for="xl">XL:</label>
+        <input type="radio" name="size" id="xl" value="XL"><br>
+        <button>Submit</button><br>
+    </form>
+    <hr>
+    <!-- Dropdown açılabilir menü -->
+    <form action="hayvanlar">
+        <label for="hayvan">Hayvanlar</label> <br>
+        <select name="pets" id="hayvan">
+       <option value="">Hayvanınızı seçiniz.</option>
+       <option value="aslan" selected>Aslan</option>
+       <option value="balık">Balık</option>
+       <option value="kuş">Kuş</option>
+    </select>
+    <button>Submit</button>   
+    </form>
+    <!-- file:///C:/Users/can.yazar/Desktop/HTML-Personal%20Website/hayvanlar?pets=aslan -->
+    <!-- Son -->
+    <hr>
+    <!-- Range aralık çubugu ekleme -->
+    <form action="">
+        <label for="range">Evdeki peynir miktarı</label>
+        <input type="range" name="peynir" id="range" min="10" max="120" value="50"step="20">
+        <button>Yolla</button>
+    </form><hr>
+    <!-- Son -->
+    <!-- Textarea -->
+    <form action="/isim">
+        <label for="metin">Mesajınız</label><br>
+        <textarea name="metin" id="metin" cols="20" rows="10">Buraya metin giriniz.</textarea><br>
+    <input type="submit">
+</form><hr>
+    <!-- Son -->
+    
+        <!-- Form Dogrulama -->
+    <form action="mecit">
+        <input type="text" placeholder="kullanıcı adı"required
+         minlength="5"maxlength="10">
+         <input type="password" placeholder="password" minlength="5"required>
+         <button>Yolla</button>
+    </form> <br><hr>
+   <!-- Form Dogrulama Sonu -->
+
+   <!-- Challange -->
+   <form action="" >
+   <h1>Race Registration!</h1>
+   <div>
+   <label for="fname">First Name</label>
+   <input type="text" name="fname" id="fname" placeholder="First Name" required>
+   <label for="lname">Last name</label>
+   <input type="text" name="lname" id="lname"placeholder="Last Name"required>
+</div><br>
+<div>
+<h2>Select a Race:</h2><br>
+<input type="radio" name="deger" id="run" value="run">
+<label for="run">Fun Run 5k</label><br>
+<input type="radio" name="deger" id="hmarathon" value="hmarathon" checked>
+<label for="hmarathon">Half Marathon</label><br>
+<input type="radio" name="deger" id="fmarathon" value="fmarathon">
+<label for="fmarathon">Full Marathon</label>
+</div><br>
+<div>
+<label for="email">Email</label>
+<input type="email" name="email" id="email" placeholder="Email"required>
+<label for="password">Password</label>
+<input type="password" name="password" id="password" minlength="5" maxlength="8" placeholder="Password"required><br>
+<label for="age">Select Age Group</label>
+<select name="age" id="age">
+    <option value="under18">Under 18</option>
+    <option value="18" selected >18</option>
+    <option value="30-50">30-50</option>
+    <option value="50+">50+</option>
+</select></div>
+
+<button>Register!</button>
+</form>
+<!-- Challange Sonu -->
+<!-- file:///C:/Users/can.yazar/Desktop/HTML-Personal%20Website/form.html?fname=Mecit+Can+&lname=Yazar&deger=hmarathon&email=mecitcanyazar%40gmail.com&password=mctcnyzr&age=18 -->
+
+
+    </body>  
+    </html>
+
+<!-- file:///C:/isim?metin=mecit+can+yazar -->
+<!-- file:///C:/Users/can.yazar/Desktop/HTML-Personal%20Website/form.html?peynir=70 -->
+<!-- file:///C:/example?kabul=on&size=XS -->
+<!-- file:///C:/ku%C5%9Flar?birds=on -->
+<!-- file:///C:/ku%C5%9Flar?birds=Kartal -->
+<!-- file:///C:/birds?onay=on -->
+<!-- https://www.youtube.com/results?search_query=html -->
+<!-- https://www.google.com.tr/search?q=front+end+developer&hl=tr&source=hp&ei=D1BJYuutFaiJxc8P29mbgAY&iflsig=AHkkrS4AAAAAYkleH_bCsUczEPdTlXIc_Cv2bbTJevKx&oq=front+end+&gs_lcp=Cgdnd3Mtd2l6EAMYADIICAAQgAQQsQMyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6CwgAEIAEELEDEIMBOgQIABADOg4ILhCABBCxAxDHARDRAzoICAAQsQMQgwE6CwguEIAEELEDEIMBOgsILhCxAxCDARDUAjoICC4QgAQQ1AI6DgguEIAEELEDEMcBEKMCOg4ILhCABBCxAxCDARDUAjoHCAAQsQMQCjoRCC4QgAQQsQMQgwEQxwEQ0QM6CAguEIAEELEDOgsILhCABBCxAxDUAlAAWIxLYPpcaAVwAHgAgAFxiAHNCpIBBDEzLjKYAQCgAQGwAQA&sclient=gws-wiz -->
+<!-- https://www.reddit.com/search/?q=kedicik -->
+
